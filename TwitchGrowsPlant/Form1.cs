@@ -34,7 +34,7 @@ namespace TwitchGrowsPlant
         private System.Timers.Timer pingTimer;
 
         // Color Control
-        int lR = 3;
+        int lR = 4;
         int lG = 2;
         int lB = 2;
 
