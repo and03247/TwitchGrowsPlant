@@ -1,0 +1,9 @@
+c:\users\elliot\documents\visual studio 2017\Projects\TwitchGrowsPlant\TwitchGrowsPlant\bin\Debug\TwitchGrowsPlant.exe.config
+c:\users\elliot\documents\visual studio 2017\Projects\TwitchGrowsPlant\TwitchGrowsPlant\bin\Debug\TwitchGrowsPlant.exe
+c:\users\elliot\documents\visual studio 2017\Projects\TwitchGrowsPlant\TwitchGrowsPlant\bin\Debug\TwitchGrowsPlant.pdb
+c:\users\elliot\documents\visual studio 2017\Projects\TwitchGrowsPlant\TwitchGrowsPlant\obj\Debug\TwitchGrowsPlant.csprojResolveAssemblyReference.cache
+c:\users\elliot\documents\visual studio 2017\Projects\TwitchGrowsPlant\TwitchGrowsPlant\obj\Debug\TwitchGrowsPlant.Form1.resources
+c:\users\elliot\documents\visual studio 2017\Projects\TwitchGrowsPlant\TwitchGrowsPlant\obj\Debug\TwitchGrowsPlant.Properties.Resources.resources
+c:\users\elliot\documents\visual studio 2017\Projects\TwitchGrowsPlant\TwitchGrowsPlant\obj\Debug\TwitchGrowsPlant.csproj.GenerateResource.Cache
+c:\users\elliot\documents\visual studio 2017\Projects\TwitchGrowsPlant\TwitchGrowsPlant\obj\Debug\TwitchGrowsPlant.exe
+c:\users\elliot\documents\visual studio 2017\Projects\TwitchGrowsPlant\TwitchGrowsPlant\obj\Debug\TwitchGrowsPlant.pdb
