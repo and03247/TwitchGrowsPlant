@@ -19,7 +19,7 @@ namespace TwitchToHue
         private IrcClient irc;
         private string readData = "";
         private Thread chatThread;
-        private NetworkStream serverStream = default(NetworkStream);
+        private NetworkStream serverStream;
 
         // Timer
         private System.Timers.Timer pingTimer;
