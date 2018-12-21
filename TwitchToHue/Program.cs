@@ -8,7 +8,7 @@ namespace TwitchToHue
     using System.Net.Sockets;
     using System.Threading;
 
-    class Program
+    internal class Program
     {
         #region Globals
         private readonly string userName = ConfigurationManager.AppSettings["username"];
@@ -20,9 +20,14 @@ namespace TwitchToHue
         private string readData = "";
         private Thread chatThread;
         private NetworkStream serverStream;
+        private readonly HueClient hueClient = new HueClient();
+        private const string LightsKeyword = "!lights ";
+        private const int CommandTimeout = 15000;
 
         // Timer
-        private System.Timers.Timer pingTimer;
+        private System.Timers.Timer timer;
+
+        private bool isTimedOut = false;
 
         #endregion
 
@@ -40,11 +45,12 @@ namespace TwitchToHue
             chatThread = new Thread(GetMessage);
             chatThread.Start();
 
-            // Initialize Timers
-            pingTimer = new System.Timers.Timer();
-            pingTimer.Elapsed += (pingTimer, ea) => PingTimeEvent(this, ea, this);
-            pingTimer.Interval = 5000;
-            pingTimer.Enabled = true;
+            // Initialize command timeout timer
+            timer = new System.Timers.Timer();
+            timer.Elapsed += (pingTimer, ea) => PingTimeEvent(this, ea, this);
+            timer.Interval = CommandTimeout;
+            timer.Enabled = true;
+            timer.Start();
         }
 
         private void Msg() // This is where everything is dealt with in chat: commands, automatic timeouts, etc.
@@ -55,12 +61,19 @@ namespace TwitchToHue
                 Console.WriteLine(readData);
                 if (readData.Contains("PRIVMSG"))
                 {
-                    var msgseparator = new string[] { "#" + this.room + " :" };
+                    var msgseparator = new[] { "#" + this.room + " :" };
                     var user = readData.Split('!')[0];
                     user = user.Substring(1); // get rid of the starting colon
                     var message = readData.Split(msgseparator, StringSplitOptions.None)[1];
 
-                    // TODO: Do something with the message here
+                    Console.WriteLine("Message: " + message);
+                    if (message.StartsWith(LightsKeyword) && !isTimedOut)
+                    {
+                        this.isTimedOut = true;
+                        var color = message.Split(' ')[1];
+                        var response = hueClient.ChangeLightToColor(color);
+                        irc.SendChatMessage(response);
+                    }
                 }
             }
             catch (Exception e)
@@ -91,7 +104,7 @@ namespace TwitchToHue
 
         private static void PingTimeEvent(object source, ElapsedEventArgs e, Program program)
         {
-            program.irc.PingResponse();
+            program.isTimedOut = false;
         }
 
         #endregion
