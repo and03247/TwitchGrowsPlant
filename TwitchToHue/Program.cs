@@ -20,6 +20,7 @@ namespace TwitchToHue
         private string readData = "";
         private Thread chatThread;
         private NetworkStream serverStream;
+        private HueClient hueClient = new HueClient();
 
         // Timer
         private System.Timers.Timer pingTimer;
@@ -47,7 +48,7 @@ namespace TwitchToHue
             pingTimer.Enabled = true;
         }
 
-        private void Msg() // This is where everything is dealt with in chat: commands, automatic timeouts, etc.
+        private async void Msg() // This is where everything is dealt with in chat: commands, automatic timeouts, etc.
         {
             try
             {
@@ -55,12 +56,18 @@ namespace TwitchToHue
                 Console.WriteLine(readData);
                 if (readData.Contains("PRIVMSG"))
                 {
-                    var msgseparator = new string[] { "#" + this.room + " :" };
+                    var msgseparator = new[] { "#" + this.room + " :" };
                     var user = readData.Split('!')[0];
                     user = user.Substring(1); // get rid of the starting colon
                     var message = readData.Split(msgseparator, StringSplitOptions.None)[1];
 
-                    // TODO: Do something with the message here
+                    Console.WriteLine("Message: " + message);
+                    if (message.StartsWith("!lights "))
+                    {
+                        var color = message.Split(' ')[1];
+                        var response = hueClient.ChangeLightToColor(color);
+                        this.irc.SendChatMessage(response);
+                    }
                 }
             }
             catch (Exception e)

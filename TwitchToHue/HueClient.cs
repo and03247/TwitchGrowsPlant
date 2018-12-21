@@ -1,7 +1,6 @@
-﻿using System;
-
-namespace TwitchToHue
+﻿namespace TwitchToHue
 {
+    using System;
     using System.Collections.Generic;
     using System.Configuration;
     using System.Net.Http;
@@ -14,24 +13,41 @@ namespace TwitchToHue
         private readonly string lightNumber = "1";
         private static readonly HttpClient client = new HttpClient();
 
+        private readonly ColorConverter colorConverter;
 
-        public async Task ChangeLightToColor(string color)
+        public HueClient()
         {
+            colorConverter = new ColorConverter();
+        }
+
+        public string ChangeLightToColor(string colorName)
+        {
+            var color = colorConverter.GetColorByName(colorName.ToLower());
+
+            if (color == null)
+            {
+                return "Unable to detect the color: " + colorName + ". Known colors are listed here: https://htmlcolorcodes.com/color-names/";
+            }
+
+            Console.WriteLine("Color: " + color.Name + " Hue: " + color.Hue + " Bri: " + color.Bri + " Sat: " + color.Sat);
+
             var url = "https://" + ipAddress + "/api/" + hueUsername + "/lights/" + lightNumber + "/state";
 
             var values = new Dictionary<string, string>
                 {
                     { "on", "true" },
-                    { "sat", "254" },
-                    { "bri", "254" },
-                    { "hue", "10000" }
+                    { "sat", color.Sat.ToString() },
+                    { "bri", color.Bri.ToString() },
+                    { "hue", color.Hue.ToString() }
                 };
 
             var content = new FormUrlEncodedContent(values);
 
-            var response = await client.PostAsync(url, content);
+            //var response = await client.PostAsync(url, content);
 
-            var responseString = await response.Content.ReadAsStringAsync();
+            //var responseString = await response.Content.ReadAsStringAsync();
+
+            return "Light color changed to: " + color.Name;
         }
 
     }

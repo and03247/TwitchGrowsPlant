@@ -1,0 +1,842 @@
+[
+    {
+        "name": "aliceblue",
+        "hue": 208,
+        "sat": 6,
+        "bri": 100
+    },
+    {
+        "name": "darkolivegreen",
+        "hue": 82,
+        "sat": 56,
+        "bri": 42
+    },
+    {
+        "name": "indigo",
+        "hue": 275,
+        "sat": 100,
+        "bri": 51
+    },
+    {
+        "name": "mediumpurple",
+        "hue": 260,
+        "sat": 49,
+        "bri": 86
+    },
+    {
+        "name": "purple",
+        "hue": 300,
+        "sat": 100,
+        "bri": 50
+    },
+    {
+        "name": "antiquewhite",
+        "hue": 34,
+        "sat": 14,
+        "bri": 98
+    },
+    {
+        "name": "darkorange",
+        "hue": 33,
+        "sat": 100,
+        "bri": 100
+    },
+    {
+        "name": "ivory",
+        "hue": 60,
+        "sat": 6,
+        "bri": 100
+    },
+    {
+        "name": "mediumseagreen",
+        "hue": 147,
+        "sat": 66,
+        "bri": 70
+    },
+    {
+        "name": "red",
+        "hue": 0,
+        "sat": 100,
+        "bri": 100
+    },
+    {
+        "name": "aqua",
+        "hue": 180,
+        "sat": 100,
+        "bri": 100
+    },
+    {
+        "name": "darkorchid",
+        "hue": 280,
+        "sat": 75,
+        "bri": 80
+    },
+    {
+        "name": "khaki",
+        "hue": 54,
+        "sat": 42,
+        "bri": 94
+    },
+    {
+        "name": "mediumslateblue",
+        "hue": 249,
+        "sat": 56,
+        "bri": 93
+    },
+    {
+        "name": "rosybrown",
+        "hue": 0,
+        "sat": 24,
+        "bri": 74
+    },
+    {
+        "name": "aquamarine",
+        "hue": 160,
+        "sat": 50,
+        "bri": 100
+    },
+    {
+        "name": "darkred",
+        "hue": 0,
+        "sat": 100,
+        "bri": 55
+    },
+    {
+        "name": "lavender",
+        "hue": 240,
+        "sat": 8,
+        "bri": 98
+    },
+    {
+        "name": "mediumspringgreen",
+        "hue": 157,
+        "sat": 100,
+        "bri": 98
+    },
+    {
+        "name": "royalblue",
+        "hue": 225,
+        "sat": 71,
+        "bri": 88
+    },
+    {
+        "name": "azure",
+        "hue": 180,
+        "sat": 6,
+        "bri": 100
+    },
+    {
+        "name": "darksalmon",
+        "hue": 15,
+        "sat": 48,
+        "bri": 91
+    },
+    {
+        "name": "lavenderblush",
+        "hue": 340,
+        "sat": 6,
+        "bri": 100
+    },
+    {
+        "name": "mediumturquoise",
+        "hue": 178,
+        "sat": 66,
+        "bri": 82
+    },
+    {
+        "name": "saddlebrown",
+        "hue": 25,
+        "sat": 86,
+        "bri": 55
+    },
+    {
+        "name": "beige",
+        "hue": 60,
+        "sat": 10,
+        "bri": 96
+    },
+    {
+        "name": "darkseagreen",
+        "hue": 115,
+        "sat": 26,
+        "bri": 74
+    },
+    {
+        "name": "lawngreen",
+        "hue": 90,
+        "sat": 100,
+        "bri": 99
+    },
+    {
+        "name": "mediumvioletred",
+        "hue": 322,
+        "sat": 89,
+        "bri": 78
+    },
+    {
+        "name": "salmon",
+        "hue": 6,
+        "sat": 54,
+        "bri": 98
+    },
+    {
+        "name": "bisque",
+        "hue": 33,
+        "sat": 23,
+        "bri": 100
+    },
+    {
+        "name": "darkslateblue",
+        "hue": 248,
+        "sat": 56,
+        "bri": 55
+    },
+    {
+        "name": "lemonchiffon",
+        "hue": 54,
+        "sat": 20,
+        "bri": 100
+    },
+    {
+        "name": "midnightblue",
+        "hue": 240,
+        "sat": 78,
+        "bri": 44
+    },
+    {
+        "name": "sandybrown",
+        "hue": 28,
+        "sat": 61,
+        "bri": 96
+    },
+    {
+        "name": "black",
+        "hue": 0,
+        "sat": 0,
+        "bri": 0
+    },
+    {
+        "name": "darkslategray",
+        "hue": 180,
+        "sat": 41,
+        "bri": 31
+    },
+    {
+        "name": "lightblue",
+        "hue": 195,
+        "sat": 25,
+        "bri": 90
+    },
+    {
+        "name": "mintcream",
+        "hue": 150,
+        "sat": 4,
+        "bri": 100
+    },
+    {
+        "name": "seagreen",
+        "hue": 146,
+        "sat": 67,
+        "bri": 55
+    },
+    {
+        "name": "blanchedalmond",
+        "hue": 36,
+        "sat": 20,
+        "bri": 100
+    },
+    {
+        "name": "darkturquoise",
+        "hue": 181,
+        "sat": 100,
+        "bri": 82
+    },
+    {
+        "name": "lightcoral",
+        "hue": 0,
+        "sat": 47,
+        "bri": 94
+    },
+    {
+        "name": "mistyrose",
+        "hue": 6,
+        "sat": 12,
+        "bri": 100
+    },
+    {
+        "name": "seashell",
+        "hue": 25,
+        "sat": 7,
+        "bri": 100
+    },
+    {
+        "name": "blue",
+        "hue": 240,
+        "sat": 100,
+        "bri": 100
+    },
+    {
+        "name": "darkviolet",
+        "hue": 282,
+        "sat": 100,
+        "bri": 83
+    },
+    {
+        "name": "lightcyan",
+        "hue": 180,
+        "sat": 12,
+        "bri": 100
+    },
+    {
+        "name": "moccasin",
+        "hue": 38,
+        "sat": 29,
+        "bri": 100
+    },
+    {
+        "name": "sienna",
+        "hue": 19,
+        "sat": 72,
+        "bri": 63
+    },
+    {
+        "name": "blueviolet",
+        "hue": 271,
+        "sat": 81,
+        "bri": 89
+    },
+    {
+        "name": "deeppink",
+        "hue": 328,
+        "sat": 92,
+        "bri": 100
+    },
+    {
+        "name": "lightgoldenrodyellow",
+        "hue": 60,
+        "sat": 16,
+        "bri": 98
+    },
+    {
+        "name": "navajowhite",
+        "hue": 36,
+        "sat": 32,
+        "bri": 100
+    },
+    {
+        "name": "silver",
+        "hue": 0,
+        "sat": 0,
+        "bri": 75
+    },
+    {
+        "name": "brown",
+        "hue": 0,
+        "sat": 75,
+        "bri": 65
+    },
+    {
+        "name": "deepskyblue",
+        "hue": 195,
+        "sat": 100,
+        "bri": 100
+    },
+    {
+        "name": "lightgray",
+        "hue": 0,
+        "sat": 0,
+        "bri": 83
+    },
+    {
+        "name": "navy",
+        "hue": 240,
+        "sat": 100,
+        "bri": 50
+    },
+    {
+        "name": "skyblue",
+        "hue": 197,
+        "sat": 43,
+        "bri": 92
+    },
+    {
+        "name": "burlywood",
+        "hue": 34,
+        "sat": 39,
+        "bri": 87
+    },
+    {
+        "name": "dimgray",
+        "hue": 0,
+        "sat": 0,
+        "bri": 41
+    },
+    {
+        "name": "lightgreen",
+        "hue": 120,
+        "sat": 39,
+        "bri": 93
+    },
+    {
+        "name": "oldlace",
+        "hue": 39,
+        "sat": 9,
+        "bri": 99
+    },
+    {
+        "name": "slateblue",
+        "hue": 248,
+        "sat": 56,
+        "bri": 80
+    },
+    {
+        "name": "cadetblue",
+        "hue": 182,
+        "sat": 41,
+        "bri": 63
+    },
+    {
+        "name": "dodgerblue",
+        "hue": 210,
+        "sat": 88,
+        "bri": 100
+    },
+    {
+        "name": "lightpink",
+        "hue": 351,
+        "sat": 29,
+        "bri": 100
+    },
+    {
+        "name": "olive",
+        "hue": 60,
+        "sat": 100,
+        "bri": 50
+    },
+    {
+        "name": "slategray",
+        "hue": 210,
+        "sat": 22,
+        "bri": 56
+    },
+    {
+        "name": "chartreuse",
+        "hue": 90,
+        "sat": 100,
+        "bri": 100
+    },
+    {
+        "name": "firebrick",
+        "hue": 0,
+        "sat": 81,
+        "bri": 70
+    },
+    {
+        "name": "lightsalmon",
+        "hue": 17,
+        "sat": 52,
+        "bri": 100
+    },
+    {
+        "name": "olivedrab",
+        "hue": 80,
+        "sat": 75,
+        "bri": 56
+    },
+    {
+        "name": "snow",
+        "hue": 0,
+        "sat": 2,
+        "bri": 100
+    },
+    {
+        "name": "chocolate",
+        "hue": 25,
+        "sat": 86,
+        "bri": 82
+    },
+    {
+        "name": "floralwhite",
+        "hue": 40,
+        "sat": 6,
+        "bri": 100
+    },
+    {
+        "name": "lightseagreen",
+        "hue": 177,
+        "sat": 82,
+        "bri": 70
+    },
+    {
+        "name": "orange",
+        "hue": 39,
+        "sat": 100,
+        "bri": 100
+    },
+    {
+        "name": "springgreen",
+        "hue": 150,
+        "sat": 100,
+        "bri": 100
+    },
+    {
+        "name": "coral",
+        "hue": 16,
+        "sat": 69,
+        "bri": 100
+    },
+    {
+        "name": "forestgreen",
+        "hue": 120,
+        "sat": 76,
+        "bri": 55
+    },
+    {
+        "name": "lightskyblue",
+        "hue": 203,
+        "sat": 46,
+        "bri": 98
+    },
+    {
+        "name": "orangered",
+        "hue": 16,
+        "sat": 100,
+        "bri": 100
+    },
+    {
+        "name": "steelblue",
+        "hue": 207,
+        "sat": 61,
+        "bri": 71
+    },
+    {
+        "name": "cornflowerblue",
+        "hue": 219,
+        "sat": 58,
+        "bri": 93
+    },
+    {
+        "name": "fuchsia",
+        "hue": 300,
+        "sat": 100,
+        "bri": 100
+    },
+    {
+        "name": "lightslategray",
+        "hue": 210,
+        "sat": 22,
+        "bri": 60
+    },
+    {
+        "name": "orchid",
+        "hue": 302,
+        "sat": 49,
+        "bri": 85
+    },
+    {
+        "name": "tan",
+        "hue": 34,
+        "sat": 33,
+        "bri": 82
+    },
+    {
+        "name": "cornsilk",
+        "hue": 48,
+        "sat": 14,
+        "bri": 100
+    },
+    {
+        "name": "gainsboro",
+        "hue": 0,
+        "sat": 0,
+        "bri": 86
+    },
+    {
+        "name": "lightsteelblue",
+        "hue": 214,
+        "sat": 21,
+        "bri": 87
+    },
+    {
+        "name": "palegoldenrod",
+        "hue": 55,
+        "sat": 29,
+        "bri": 93
+    },
+    {
+        "name": "teal",
+        "hue": 180,
+        "sat": 100,
+        "bri": 50
+    },
+    {
+        "name": "crimson",
+        "hue": 348,
+        "sat": 91,
+        "bri": 86
+    },
+    {
+        "name": "ghostwhite",
+        "hue": 240,
+        "sat": 3,
+        "bri": 100
+    },
+    {
+        "name": "lightyellow",
+        "hue": 60,
+        "sat": 12,
+        "bri": 100
+    },
+    {
+        "name": "palegreen",
+        "hue": 120,
+        "sat": 39,
+        "bri": 98
+    },
+    {
+        "name": "thistle",
+        "hue": 300,
+        "sat": 12,
+        "bri": 85
+    },
+    {
+        "name": "cyan",
+        "hue": 180,
+        "sat": 100,
+        "bri": 100
+    },
+    {
+        "name": "gold",
+        "hue": 51,
+        "sat": 100,
+        "bri": 100
+    },
+    {
+        "name": "lime",
+        "hue": 120,
+        "sat": 100,
+        "bri": 100
+    },
+    {
+        "name": "paleturquoise",
+        "hue": 180,
+        "sat": 26,
+        "bri": 93
+    },
+    {
+        "name": "tomato",
+        "hue": 9,
+        "sat": 72,
+        "bri": 100
+    },
+    {
+        "name": "darkblue",
+        "hue": 240,
+        "sat": 100,
+        "bri": 55
+    },
+    {
+        "name": "goldenrod",
+        "hue": 43,
+        "sat": 85,
+        "bri": 85
+    },
+    {
+        "name": "limegreen",
+        "hue": 120,
+        "sat": 76,
+        "bri": 80
+    },
+    {
+        "name": "palevioletred",
+        "hue": 340,
+        "sat": 49,
+        "bri": 86
+    },
+    {
+        "name": "turquoise",
+        "hue": 174,
+        "sat": 71,
+        "bri": 88
+    },
+    {
+        "name": "darkcyan",
+        "hue": 180,
+        "sat": 100,
+        "bri": 55
+    },
+    {
+        "name": "gray",
+        "hue": 0,
+        "sat": 0,
+        "bri": 50
+    },
+    {
+        "name": "linen",
+        "hue": 30,
+        "sat": 8,
+        "bri": 98
+    },
+    {
+        "name": "papayawhip",
+        "hue": 37,
+        "sat": 16,
+        "bri": 100
+    },
+    {
+        "name": "violet",
+        "hue": 300,
+        "sat": 45,
+        "bri": 93
+    },
+    {
+        "name": "darkgoldenrod",
+        "hue": 43,
+        "sat": 94,
+        "bri": 72
+    },
+    {
+        "name": "green",
+        "hue": 120,
+        "sat": 100,
+        "bri": 50
+    },
+    {
+        "name": "magenta",
+        "hue": 300,
+        "sat": 100,
+        "bri": 100
+    },
+    {
+        "name": "peachpuff",
+        "hue": 28,
+        "sat": 27,
+        "bri": 100
+    },
+    {
+        "name": "wheat",
+        "hue": 39,
+        "sat": 27,
+        "bri": 96
+    },
+    {
+        "name": "darkgray",
+        "hue": 0,
+        "sat": 0,
+        "bri": 66
+    },
+    {
+        "name": "greenyellow",
+        "hue": 84,
+        "sat": 82,
+        "bri": 100
+    },
+    {
+        "name": "maroon",
+        "hue": 0,
+        "sat": 100,
+        "bri": 50
+    },
+    {
+        "name": "peru",
+        "hue": 30,
+        "sat": 69,
+        "bri": 80
+    },
+    {
+        "name": "white",
+        "hue": 0,
+        "sat": 0,
+        "bri": 100
+    },
+    {
+        "name": "darkgreen",
+        "hue": 120,
+        "sat": 100,
+        "bri": 39
+    },
+    {
+        "name": "honeydew",
+        "hue": 120,
+        "sat": 6,
+        "bri": 100
+    },
+    {
+        "name": "mediumaquamarine",
+        "hue": 160,
+        "sat": 50,
+        "bri": 80
+    },
+    {
+        "name": "pink",
+        "hue": 350,
+        "sat": 25,
+        "bri": 100
+    },
+    {
+        "name": "whitesmoke",
+        "hue": 0,
+        "sat": 0,
+        "bri": 96
+    },
+    {
+        "name": "darkkhaki",
+        "hue": 56,
+        "sat": 43,
+        "bri": 74
+    },
+    {
+        "name": "hotpink",
+        "hue": 330,
+        "sat": 59,
+        "bri": 100
+    },
+    {
+        "name": "mediumblue",
+        "hue": 240,
+        "sat": 100,
+        "bri": 80
+    },
+    {
+        "name": "plum",
+        "hue": 300,
+        "sat": 28,
+        "bri": 87
+    },
+    {
+        "name": "yellow",
+        "hue": 60,
+        "sat": 100,
+        "bri": 100
+    },
+    {
+        "name": "darkmagenta",
+        "hue": 300,
+        "sat": 100,
+        "bri": 55
+    },
+    {
+        "name": "indianred",
+        "hue": 0,
+        "sat": 55,
+        "bri": 80
+    },
+    {
+        "name": "mediumorchid",
+        "hue": 288,
+        "sat": 60,
+        "bri": 83
+    },
+    {
+        "name": "powderblue",
+        "hue": 187,
+        "sat": 23,
+        "bri": 90
+    },
+    {
+        "name": "yellowgreen",
+        "hue": 80,
+        "sat": 76,
+        "bri": 80
+    }
+]
