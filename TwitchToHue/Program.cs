@@ -8,7 +8,7 @@ namespace TwitchToHue
     using System.Net.Sockets;
     using System.Threading;
 
-    class Program
+    internal class Program
     {
         #region Globals
         private readonly string userName = ConfigurationManager.AppSettings["username"];
@@ -20,7 +20,8 @@ namespace TwitchToHue
         private string readData = "";
         private Thread chatThread;
         private NetworkStream serverStream;
-        private HueClient hueClient = new HueClient();
+        private readonly HueClient hueClient = new HueClient();
+        private const string LightsKeyword = "!lights ";
 
         // Timer
         private System.Timers.Timer pingTimer;
@@ -48,7 +49,7 @@ namespace TwitchToHue
             pingTimer.Enabled = true;
         }
 
-        private async void Msg() // This is where everything is dealt with in chat: commands, automatic timeouts, etc.
+        private void Msg() // This is where everything is dealt with in chat: commands, automatic timeouts, etc.
         {
             try
             {
@@ -62,11 +63,11 @@ namespace TwitchToHue
                     var message = readData.Split(msgseparator, StringSplitOptions.None)[1];
 
                     Console.WriteLine("Message: " + message);
-                    if (message.StartsWith("!lights "))
+                    if (message.StartsWith(LightsKeyword))
                     {
                         var color = message.Split(' ')[1];
                         var response = hueClient.ChangeLightToColor(color);
-                        this.irc.SendChatMessage(response);
+                        irc.SendChatMessage(response);
                     }
                 }
             }

@@ -12,7 +12,7 @@
 
         public ColorConverter()
         {
-            const string FilePath = @"../../../colors.json";
+            const string FilePath = "../../../colors.json";
             var json = File.ReadAllText(FilePath);
             var list = JsonConvert.DeserializeObject<List<Color>>(json);
             AvailableColors = list;

@@ -4,15 +4,13 @@
     using System.Collections.Generic;
     using System.Configuration;
     using System.Net.Http;
-    using System.Threading.Tasks;
 
     public class HueClient
     {
         private readonly string ipAddress = ConfigurationManager.AppSettings["ipAddress"];
         private readonly string hueUsername = ConfigurationManager.AppSettings["hueUsername"];
-        private readonly string lightNumber = "1";
-        private static readonly HttpClient client = new HttpClient();
-
+        private const string LightNumber = "1";
+        private static readonly HttpClient Client = new HttpClient();
         private readonly ColorConverter colorConverter;
 
         public HueClient()
@@ -24,6 +22,7 @@
         {
             var color = colorConverter.GetColorByName(colorName.ToLower());
 
+            // If can't find the specified color, return an error message.
             if (color == null)
             {
                 return "Unable to detect the color: " + colorName + ". Known colors are listed here: https://htmlcolorcodes.com/color-names/";
@@ -31,7 +30,7 @@
 
             Console.WriteLine("Color: " + color.Name + " Hue: " + color.Hue + " Bri: " + color.Bri + " Sat: " + color.Sat);
 
-            var url = "https://" + ipAddress + "/api/" + hueUsername + "/lights/" + lightNumber + "/state";
+            var url = "https://" + ipAddress + "/api/" + hueUsername + "/lights/" + LightNumber + "/state";
 
             var values = new Dictionary<string, string>
                 {
@@ -43,9 +42,9 @@
 
             var content = new FormUrlEncodedContent(values);
 
-            //var response = await client.PostAsync(url, content);
+            var response = Client.PostAsync(url, content);
 
-            //var responseString = await response.Content.ReadAsStringAsync();
+            Console.WriteLine(response.Result);
 
             return "Light color changed to: " + color.Name;
         }
