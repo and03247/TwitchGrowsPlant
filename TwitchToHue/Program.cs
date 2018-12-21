@@ -22,9 +22,12 @@ namespace TwitchToHue
         private NetworkStream serverStream;
         private readonly HueClient hueClient = new HueClient();
         private const string LightsKeyword = "!lights ";
+        private const int CommandTimeout = 15000;
 
         // Timer
-        private System.Timers.Timer pingTimer;
+        private System.Timers.Timer timer;
+
+        private bool isTimedOut = false;
 
         #endregion
 
@@ -42,11 +45,12 @@ namespace TwitchToHue
             chatThread = new Thread(GetMessage);
             chatThread.Start();
 
-            // Initialize Timers
-            pingTimer = new System.Timers.Timer();
-            pingTimer.Elapsed += (pingTimer, ea) => PingTimeEvent(this, ea, this);
-            pingTimer.Interval = 5000;
-            pingTimer.Enabled = true;
+            // Initialize command timeout timer
+            timer = new System.Timers.Timer();
+            timer.Elapsed += (pingTimer, ea) => PingTimeEvent(this, ea, this);
+            timer.Interval = CommandTimeout;
+            timer.Enabled = true;
+            timer.Start();
         }
 
         private void Msg() // This is where everything is dealt with in chat: commands, automatic timeouts, etc.
@@ -63,8 +67,9 @@ namespace TwitchToHue
                     var message = readData.Split(msgseparator, StringSplitOptions.None)[1];
 
                     Console.WriteLine("Message: " + message);
-                    if (message.StartsWith(LightsKeyword))
+                    if (message.StartsWith(LightsKeyword) && !isTimedOut)
                     {
+                        this.isTimedOut = true;
                         var color = message.Split(' ')[1];
                         var response = hueClient.ChangeLightToColor(color);
                         irc.SendChatMessage(response);
@@ -99,7 +104,7 @@ namespace TwitchToHue
 
         private static void PingTimeEvent(object source, ElapsedEventArgs e, Program program)
         {
-            program.irc.PingResponse();
+            program.isTimedOut = false;
         }
 
         #endregion

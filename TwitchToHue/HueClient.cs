@@ -40,11 +40,11 @@
                     { "hue", color.Hue.ToString() }
                 };
 
-            var content = new FormUrlEncodedContent(values);
+            //var content = new FormUrlEncodedContent(values);
 
-            var response = Client.PostAsync(url, content);
+            //var response = Client.PostAsync(url, content);
 
-            Console.WriteLine(response.Result);
+            //Console.WriteLine(response.Result);
 
             return "Light color changed to: " + color.Name;
         }
